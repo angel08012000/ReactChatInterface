@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ChatInput.module.css';
 
-const ChatInput = () => {
+const ChatInput = ({onSendMessage}) => {
     const [message, setMessage] = useState('');
 
     const handleMessageChange = (event) => {
@@ -10,8 +10,10 @@ const ChatInput = () => {
   
     const handleSendMessage = () => {
       // sending message to your backend
-      
-      setMessage('');
+      if (message.trim() !== '') {
+        onSendMessage(message);
+        setMessage(''); // 清空輸入欄位
+      }
     };
 
   return (

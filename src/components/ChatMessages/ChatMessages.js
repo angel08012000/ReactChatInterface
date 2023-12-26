@@ -3,19 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRobot, faUser } from '@fortawesome/free-solid-svg-icons';
 import styles from './ChatMessages.module.css';
 
-// Here is your messages
-const messages = [
-    {
-        from: "system",
-        text: "Hello, nice to meet you!" 
-    },
-    {
-        from: "user",
-        text: "I want to ask..." 
-    }
-];
-
-const ChatMessages = () => {
+const ChatMessages = ({messages}) => {
   return (
     <div className={styles.container}>
       {messages.map((message, index) => (
