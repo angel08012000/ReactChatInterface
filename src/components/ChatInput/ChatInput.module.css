@@ -1,0 +1,23 @@
+.container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+.input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.button {
+  margin-left: 8px;
+  padding: 8px;
+  background-color: #686699;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

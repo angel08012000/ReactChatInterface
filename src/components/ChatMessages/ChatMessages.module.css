@@ -1,0 +1,56 @@
+.container {
+    background-color: #c8c8dc;
+    overflow-y: auto;
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.message {
+    display: flex;
+}
+
+.systemMessage {
+    align-items: center;
+    flex-direction: row;
+}
+
+.userMessage {
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.avatar {
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.systemAvatar {
+    color: #ffffff;
+    background-color: #8da3f3;
+}
+
+.userAvatar {
+    color: #1f1f1f;
+}
+
+.text {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.systemText {
+    color: #ffffff;
+    background-color: #8da3f3;
+}
+
+.userText {
+    color: #1f1f1f;
+    background-color: #ffffff;
+}
